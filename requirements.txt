@@ -1,0 +1,57 @@
+Technical Challenge – Next.js + Cursor AI: “Parachute Trains” Puzzle
+
+You are asked to build a small web application in Next.js using Cursor AI that visually
+simulates and explains the solution to the “parachute trains on a railway line” problem.
+
+Problem Description
+A helicopter drops two trains, each on a parachute, onto a straight infinite railway line. The
+distance between the trains is unknown. Both trains face the same direction. When they
+land, each parachute detaches and stays on the track next to the train.
+
+Each train is controlled by an identical microchip running the same program. The trains:
+• Do not know their position on the line.
+• Do not know the distance between them.
+• Cannot communicate with each other.
+• Can only: move forward one unit per time step, move backward one unit per time step,
+or wait in place for one time step.
+• Can detect when they are exactly at a parachute, but they cannot distinguish whether it
+is their own parachute or the other train’s parachute.
+
+Goal of the puzzle: Design an algorithm (the program inside each train’s chip) that
+guarantees the two trains will eventually bump into each other, no matter how far apart
+they start.
+
+Your Task
+Using Next.js and Cursor AI, you must complete the following:
+1. 1. Model the puzzle
+• - Represent the railway line as a one-dimensional line.
+- Represent both trains and both parachutes on that line.
+- Simulate the trains executing the same algorithm step by step.
+
+2. 2. Visualize the solution
+• - Show the trains and parachutes on the line in a clear graphical way (simple 2D
+visualization is enough).
+- Animate or step through the algorithm so we can see how the trains move over time.
+- Clearly indicate when and where the trains collide (the successful end of the
+algorithm).
+
+3. 3. Use Cursor AI as your main assistant
+• - You must use Cursor AI to help you design and implement the final version of the
+application (for example, prompting Cursor to generate components, refactor code, add
+tests, etc.).
+- You may write and adjust code manually, but Cursor AI should be a key part of your
+workflow.
+
+4. 4. Original work requirement
+• - You must not copy or adapt existing implementations of this specific parachute-train /
+parachuted-robots problem from the web (Stack Overflow, blogs, GitHub, etc.).
+- Use your own reasoning and your interaction with Cursor AI to arrive at the algorithm
+and implementation.
+- We may ask detailed questions to verify authorship and understanding.
+
+What to Deliver
+You must deliver a working Next.js web application (link to a repository is acceptable) that:
+• Runs locally with a standard `npm install` and `npm run dev` (or equivalent) process.
+• Includes a visual simulation of the puzzle and its solution.
+• Contains a short README explaining: the core idea of your algorithm, how to run the
+project, and how you used Cursor AI during the development.

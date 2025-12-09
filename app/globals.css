@@ -1,0 +1,126 @@
+/* Global styles for Parachute Trains puzzle */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #3b82f6;
+  --secondary: #64748b;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Main container */
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Railway scrollbar */
+.railway-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.railway-container::-webkit-scrollbar-track {
+  background: #2a2a3e;
+  border-radius: 4px;
+}
+
+.railway-container::-webkit-scrollbar-thumb {
+  background: #4a4a5e;
+  border-radius: 4px;
+}
+
+.railway-container::-webkit-scrollbar-thumb:hover {
+  background: #5a5a6e;
+}
+
+/* Pulse animation for collision */
+@keyframes pulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.3);
+  }
+}
+
+/* Button hover effects */
+button {
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #4a4a5e;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 20px 10px;
+  }
+  
+  .simulation-status {
+    flex-wrap: wrap;
+  }
+}

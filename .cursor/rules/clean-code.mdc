@@ -1,0 +1,26 @@
+---
+description: Clean Code principles to follow throughout the codebase
+alwaysApply: true
+---
+
+# Clean Code Principles
+
+## Single Responsibility Principle (SRP)
+- Each function, component, or module should have ONE clear purpose
+- If a component does multiple things, split it into smaller components
+- Keep files focused: one main export per file when possible
+
+## Don't Repeat Yourself (DRY)
+- Extract repeated logic into reusable functions or hooks
+- Create shared components for repeated UI patterns
+- Centralize constants and configurations
+
+## Reuse Code
+- Before creating new utilities, check if similar functionality exists
+- Leverage existing libraries (framer-motion, lucide-react) instead of reinventing
+- Build composable components that can be combined
+
+## Keep It Simple (KISS)
+- Prefer simple solutions over clever ones
+- Avoid premature optimization
+- Write code that is easy to read and understand

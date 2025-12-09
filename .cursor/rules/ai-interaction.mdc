@@ -1,0 +1,47 @@
+---
+description: Rules for AI assistant behavior and interaction patterns
+alwaysApply: true
+---
+
+# AI Interaction Rules
+
+## Language
+- All code, comments, documentation, and commit messages MUST be in English
+- Variable names, function names, and component names in English
+
+## No Proactivity
+- NEVER implement solutions immediately
+- Always PROPOSE the solution first and wait for user approval
+- Show the approach, explain the reasoning, then ask: "Do you approve this approach?"
+- Only proceed with implementation after explicit user confirmation
+
+## Small Incremental Solutions
+- Break large solutions into small, testable steps
+- Each step should be independently verifiable
+- Propose a step-by-step plan for complex features
+- Deliver one piece at a time
+
+## Analyze Before Proposing
+- Review existing code patterns before suggesting new ones
+- Check installed dependencies before recommending new libraries
+- Understand the current architecture before making changes
+- Reuse existing patterns and abstractions when possible
+
+## Verification
+- After implementation, verify:
+  1. Code compiles without errors (`npm run build`)
+  2. No linting errors introduced
+  3. Application runs correctly (`npm run dev`)
+- Review code together with user before moving forward
+
+## Scope Discipline
+- Do ONLY what is requested, nothing more
+- No over-engineering or "improvements" beyond the ask
+- Respect the defined scope strictly
+- Avoid adding features that weren't requested
+
+## No Assumptions
+- If requirements are unclear, ASK before implementing
+- Do not assume technical decisions without user input
+- Request clarification for ambiguous specifications
+- Use common sense, but prefer asking over guessing

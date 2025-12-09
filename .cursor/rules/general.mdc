@@ -1,0 +1,28 @@
+---
+description: Project context, tech stack, and file structure conventions
+alwaysApply: true
+---
+
+# Parachute Trains Puzzle
+
+This is a Next.js web application that visually simulates the "parachute trains on a railway line" puzzle. 
+Two trains on an infinite railway must find each other using identical algorithms without communication.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI**: React 19
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Styling**: Plain CSS (no Tailwind)
+- **Language**: TypeScript
+
+## File Structure Convention
+
+```
+app/           # Next.js App Router pages and layouts
+components/    # Reusable React components
+hooks/         # Custom React hooks (if needed)
+lib/           # Utility functions (if needed)
+public/        # Static assets
+```

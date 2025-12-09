@@ -2,6 +2,8 @@
 
 A Next.js web application that visually simulates and explains the solution to the "parachute trains on a railway line" problem.
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-parachute--nu.vercel.app-blue?style=for-the-badge)](https://parachute-nu.vercel.app/)
+
 ![Collision Success](https://img.shields.io/badge/Algorithm-Verified-green)
 ![Tests](https://img.shields.io/badge/Tests-33%20passed-brightgreen)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
